@@ -15,8 +15,12 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Custom CSS -->
+        <link href="css/custom.css" rel="stylesheet" />
+        <!-- AOS Animation Library -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
-<body id="page-top" style="background-image: url('assets/img/portfolio/fond.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+<body id="page-top">
 
 
         <!-- Navigation-->
@@ -43,33 +47,33 @@
         <header class="masthead">
             
             <div class="container">
-                <div class="masthead-subheading">Charles Mathieu</div>
-                <div class="masthead-heading text-uppercase">Mon portfolio</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Plus d'informations</a>
+                <div class="masthead-subheading" data-aos="fade-up">Charles Mathieu</div>
+                <div class="masthead-heading text-uppercase" data-aos="fade-up" data-aos-delay="300">Mon portfolio</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services" data-aos="fade-up" data-aos-delay="600">Plus d'informations</a>
             </div>
         </header>
         <!-- Services-->
-        <section class="page-section bg-dark text-white" id="services">
+        <section class="page-section" id="services" data-aos="fade-up">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">À propos</h2>
-                    <h3 class="section-subheading text-muted">Mon parcours sur ces dernières années.</h3>
+                    <h2 class="section-heading text-uppercase" data-aos="fade-up">À propos</h2>
+                    <h3 class="section-subheading text-muted" data-aos="fade-up" data-aos-delay="200">Mon parcours sur ces dernières années.</h3>
                 </div>
                 <div class="row text-center">
                     <div class="row text-center">
-                        <div class="col-md-6"> <!-- Ajusté à col-md-6 pour équilibrer -->
+                        <div class="col-md-6" data-aos="fade-right"> <!-- Ajusté à col-md-6 pour équilibrer -->
                             <span class="fa-stack fa-4x">
                                 <img src="assets\img\team\cfm logo.jpg" alt="E-Commerce" class="img-fluid">
                             </span>
                             <h4 class="my-3">CFM Indosuez</h4>
-                            <p class="text-muted">"CFM Indosuez est une banque privée située à Monaco. J'ai la chance d'y occuper le rôle de technicien support, ce qui me permet de contribuer à plusieurs projets en parrallèle.</p>
+                            <p class="text-muted">CFM Indosuez est une banque privée située à Monaco. J'ai la chance d'y occuper le rôle de technicien support, ce qui me permet de contribuer à plusieurs projets en parallèle.</p>
                         </div>
-                        <div class="col-md-6"> <!-- Ajusté à col-md-6 pour équilibrer -->
+                        <div class="col-md-6" data-aos="fade-left"> <!-- Ajusté à col-md-6 pour équilibrer -->
                             <span class="fa-stack fa-4x">
-                                <img src="assets\img\team\ufip logo.jpg" alt="Responsive Design" class="img-fluid class="img-fluid style="height: 100px; width: auto;">
+                                <img src="assets\img\team\ufip logo.jpg" alt="Responsive Design" class="img-fluid" style="height: 100px; width: auto;">
                             </span>
                             <h4 class="my-3">Ufitech</h4>
-                            <p class="text-muted">"Je suis actuellement étudiant à Ifitech en BTS SIO SLAM. Cette formation m'a permis d'acquérir des compétences essentielles, notamment en dev tels que les programmes orientés objets ou les langages web."</p>
+                            <p class="text-muted">Je suis actuellement étudiant à Ifitech en BTS SIO SLAM. Cette formation m'a permis d'acquérir des compétences essentielles, notamment en développement tels que les programmes orientés objets ou les langages web.</p>
                         </div>
                     </div>                    
                     </div>
@@ -77,14 +81,14 @@
             </div>
         </section>
         <!-- Portfolio Grid-->
-        <section class="page-section bg-dark text-white" id="portfolio">
+        <section class="page-section" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Mes projets</h2>
-                    <h3 class="section-subheading text-muted">Ce que j'ai accompli durant ce cursus.</h3>
+                    <h2 class="section-heading text-uppercase" data-aos="fade-up">Mes projets</h2>
+                    <h3 class="section-subheading text-muted" data-aos="fade-up" data-aos-delay="200">Ce que j'ai accompli durant ce cursus.</h3>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="fade-up">
                         <!-- Portfolio item 1-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
@@ -99,7 +103,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                         <!-- Portfolio item 2-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
@@ -114,7 +118,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                         <!-- Portfolio item 3-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
@@ -129,7 +133,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
                         <!-- Portfolio item 4-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
@@ -140,11 +144,11 @@
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Cinéma</div>
+                                <div class="portfolio-caption-subheading text-muted">CinemaFX</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0" data-aos="fade-up" data-aos-delay="400">
                         <!-- Portfolio item 5-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
@@ -159,18 +163,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
                         <!-- Portfolio item 6-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets\img\team\javafx.webp" alt="..." />
+                                <img class="img-fluid tiger-logo" src="assets\img\team\tigergymlogo.avif?v=1" alt="TigerGym Logo" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Récepteur avec interface JavaFX
+                                <div class="portfolio-caption-subheading text-muted">TigerGym</div>
                                 </div>
                             </div>
                         </div>
@@ -179,15 +183,15 @@
             </div>
         </section>
         <!-- About-->
-        <section class="page-section bg-dark text-white" id="about">
+        <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Mon parcours</h2>
-                    <h3 class="section-subheading text-muted">Depuis mes débuts jusqu'aujourd'hui et plus tard</h3>
+                    <h2 class="section-heading text-uppercase" data-aos="fade-up">Mon parcours</h2>
+                    <h3 class="section-subheading text-muted" data-aos="fade-up" data-aos-delay="200">Depuis mes débuts jusqu'aujourd'hui et plus tard</h3>
                 </div>
                 <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                    <li data-aos="fade-right">
+                        <div class="timeline-image"><img class="img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>2022-2023</h4>
@@ -196,8 +200,8 @@
                             <div class="timeline-body"><p class="text-muted">J'ai obtenu mon Bac avec la spécialité NSI (Numérique et Sciences Informatiques), où j'ai découvert les bases de la programmation notamment en Python et de la conception algorithmique</p></div>
                         </div> 
                     </li>
-                    <li class="timeline-inverted">
-                        <div class="timelinej-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                    <li class="timeline-inverted" data-aos="fade-left">
+                        <div class="timeline-image"><img class="img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>2023-2024</h4>
@@ -206,8 +210,8 @@
                             <div class="timeline-body"><p class="text-muted">Ma première année de BTS SIO SLAM m'a permis de découvrir les bases du développement logiciel, avec des langages comme Java et PHP, et d'acquérir des compétences en création de bases de données.</p></div>
                         </div>
                     </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                    <li data-aos="fade-right">
+                        <div class="timeline-image"><img class="img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>2024-2025</h4>
@@ -216,8 +220,8 @@
                             <div class="timeline-body"><p class="text-muted">Ma deuxième année de BTS SIO SLAM m'a permis d'approfondir mes compétences en développement d'applications, en maîtrisant la programmation orientée objet, les projets web avancés et la gestion de bases de données complexes.</p></div>
                         </div>
                     </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                    <li class="timeline-inverted" data-aos="fade-left">
+                        <div class="timeline-image"><img class="img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Bientot</h4>
@@ -226,7 +230,7 @@
                             <div class="timeline-body"><p class="text-muted">L'année prochaine, je compte poursuivre une licence en informatique pour approfondir mes connaissances, développer de nouvelles compétences en technologies avancées et me spécialiser davantage dans le domaine du développement et de l'ingénierie logicielle.</p></div>
                         </div>
                     </li>
-                    <li class="timeline-inverted">
+                    <li class="timeline-inverted" data-aos="zoom-in" data-aos-delay="300">
                         <div class="timeline-image">
                             <h4>
                                 La suite
@@ -245,8 +249,8 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Me contacter</h2>
-                    <h3 class="section-subheading text-muted">N'hésitez pas à me contacter, je vous recontacterai dans les plus brefs delais.</h3>
+                    <h2 class="section-heading text-uppercase" data-aos="fade-up">Me contacter</h2>
+                    <h3 class="section-subheading text-muted" data-aos="fade-up" data-aos-delay="200">N'hésitez pas à me contacter, je vous recontacterai dans les plus brefs délais.</h3>
                 </div>
                 <!-- * * * * * * * * * * * * * * *-->
                 <!-- * * SB Forms Contact Form * *-->
@@ -257,7 +261,7 @@
                 <!-- to get an API token!-->
                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                     <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-right">
                             <div class="form-group">
                                 <!-- Name input-->
                                 <input class="form-control" id="name" type="text" placeholder="Votre Nom *" data-sb-validations="required" />
@@ -275,7 +279,7 @@
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">Un numéro est requis.</div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-left">
                             <div class="form-group form-group-textarea mb-md-0">
                                 <!-- Message input-->
                                 <textarea class="form-control" id="message" placeholder="Le message que vous souhaitez envoyer *" data-sb-validations="required"></textarea>
@@ -301,7 +305,7 @@
                     <!-- an error submitting the form-->
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Envoyer Le Message</button></div>
+                    <div class="text-center" data-aos="fade-up"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Envoyer Le Message</button></div>
                 </form>
             </div>
         </section>
@@ -398,18 +402,18 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <h2 class="text-uppercase">Gestion du parc informatique</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets\img\team\cinema.jpeg alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets\img\team\parcinfo.jpg" alt="..." />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Client:</strong>
-                                            Finish
+                                            CFM Indosuez
                                         </li>
                                         <li>
                                             <strong>Category:</strong>
-                                            Identity
+                                            Gestion IT
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -433,23 +437,23 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">CinemaFX</h2>
+                                    <p class="item-intro text-muted">Gestion d'un cinéma en tant qu'adminitrateur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets\img\team\cinema.webp" alt="..." />
+                                    <p>CinemaFX est une application de bureau développée en JavaFX, destinée à l'administration et à la gestion d'un cinéma. Elle propose une interface graphique simple et intuitive permettant au personnel administratif de gérer efficacement les différents aspects liés à la programmation et à la clientèle. Repository: <a href="https://github.com/charlesmathieugit/cinemafx" target="_blank" class="repo-link">https://github.com/charlesmathieugit/cinemafx</a></p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Client:</strong>
-                                            Lines
+                                            Administrateur
                                         </li>
                                         <li>
-                                            <strong>Category:</strong>
-                                            Branding
+                                            <strong>Categorie:</strong>
+                                            Développement logiciel
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Fermer Le Project
                                     </button>
                                 </div>
                             </div>
@@ -468,23 +472,23 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">Brocéliande Immo</h2>
+                                    <p class="item-intro text-muted">Site web d' agence immobilière</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets\img\team\agenceimmo.jpg" alt="..." />
+                                    <p>Broceliande Immo est un site web développé en PHP selon le modèle MVC (Modèle-Vue-Contrôleur). Il s'agit d’une plateforme dédiée à une agence immobilière, permettant de gérer et de présenter des biens immobiliers à la vente ou à la location, avec une interface intuitive pour les visiteurs comme pour les administrateurs. Repository: <a href="https://github.com/charlesmathieugit/broceliande_immo" target="_blank" class="repo-link">https://github.com/charlesmathieugit/broceliande_immo</a></p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Client:</strong>
-                                            Southwest
+                                            Brocéliande Immo
                                         </li>
                                         <li>
-                                            <strong>Category:</strong>
-                                            Website Design
+                                            <strong>Categorie:</strong>
+                                            Développement Web
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Fermer Le Project
                                     </button>
                                 </div>
                             </div>
@@ -503,18 +507,18 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">TigerGym</h2>
+                                    <p class="item-intro text-muted">Site web de référencement sportif</p>
+                                    <img class="img-fluid d-block mx-auto tiger-logo" src="assets\img\team\tigergymlogo.avif?v=1" alt="TigerGym Logo" />
+                                    <p>TigerGym est une application e-commerce développée en PHP avec une architecture MVC complète. Elle est dédiée à la vente en ligne de matériel et équipements de fitness, incluant des articles de musculation, accessoires, vêtements de sport et compléments alimentaires. L’objectif est de proposer une plateforme claire, fonctionnelle et performante, aussi bien pour les clients que pour l’administrateur. Repository: <a href="https://github.com/charlesmathieugit/tigergym" target="_blank" class="repo-link">https://github.com/charlesmathieugit/tigergym</a></p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Client:</strong>
-                                            Window
+                                            Utilisateur ou Administrateur
                                         </li>
                                         <li>
-                                            <strong>Category:</strong>
-                                            Photography
+                                            <strong>Categorie:</strong>
+                                            Développement Web
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -537,5 +541,14 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- AOS Animation Init -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+          });
+        </script>
     </body>
 </html>
