@@ -511,26 +511,18 @@ span.fa-stack.fa-4x img {
 
 /* Styles pour la nouvelle image TigerGym */
 .tiger-logo {
-  background-color: #f8f8f8;
-  border-radius: 8px;
-  padding: 10px;
   object-fit: contain;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .tiger-logo:hover {
   transform: scale(1.03);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Style spécifique pour TigerGym dans la fenêtre modale */
 .portfolio-modal .tiger-logo {
   max-height: 300px;
   margin-bottom: 30px;
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Style pour les liens vers les repositories */
