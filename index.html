@@ -21,6 +21,81 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
 <body id="page-top">
+    <!-- Overlays pour le thème futuriste -->
+    <div class="scanlines"></div>
+    <div class="hologram-lines"></div>
+    <div class="scan-line"></div>
+    
+    <!-- Balises de code flottantes -->
+    <div class="code-tags" id="codeTags"></div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const codeTagsContainer = document.getElementById('codeTags');
+            // Sélection de balises plus limitée pour un aspect plus discret
+            const htmlTags = ['<div>', '</div>', '<span>', '</span>', '<header>', '<nav>'];
+            const cssTags = ['.class {}', '#id {}', 'display: flex;', 'position: absolute;'];
+            const jsTags = ['function() {}', 'const data = [];', 'if (condition) {}', 'document.querySelector()'];
+            
+            // Démarrer avec un petit nombre de balises
+            for (let i = 0; i < 8; i++) {
+                setTimeout(() => {
+                    const types = [htmlTags, cssTags, jsTags];
+                    const classes = ['html', 'css', 'js'];
+                    const randomIndex = Math.floor(Math.random() * 3);
+                    createNewTag(types[randomIndex], classes[randomIndex]);
+                }, i * 500); // Espacement plus grand entre les apparitions
+            }
+            
+            // Créer un flux très léger de nouvelles balises
+            setInterval(() => {
+                // Ne créer une nouvelle balise que 50% du temps pour plus de discrétion
+                if (Math.random() > 0.5) {
+                    const random = Math.random();
+                    if (random < 0.33) {
+                        createNewTag(htmlTags, 'html');
+                    } else if (random < 0.66) {
+                        createNewTag(cssTags, 'css');
+                    } else {
+                        createNewTag(jsTags, 'js');
+                    }
+                }
+            }, 2500); // Intervalle beaucoup plus long entre les créations
+            
+            function createNewTag(tags, cssClass) {
+                // Limite beaucoup plus basse de balises simultanées
+                if (document.querySelectorAll('.code-tag').length > 15) return;
+                
+                const tagElement = document.createElement('div');
+                tagElement.textContent = tags[Math.floor(Math.random() * tags.length)];
+                tagElement.className = `code-tag ${cssClass}`;
+                
+                // Animation plus lente pour un effet plus subtil
+                const duration = Math.random() * 15 + 25; // 25-40 secondes
+                tagElement.style.setProperty('--float-duration', duration + 's');
+                
+                // Mouvement horizontal plus limité
+                const floatX = (Math.random() * 100 - 50);
+                tagElement.style.setProperty('--float-x', floatX + 'px');
+                
+                // Positionnement aléatoire
+                tagElement.style.left = (Math.random() * 90 + 5) + '%';
+                
+                // Taille de police plus petite pour plus de discrétion
+                tagElement.style.fontSize = (Math.random() * 2 + 10) + 'px';
+                
+                // Ajouter au DOM
+                codeTagsContainer.appendChild(tagElement);
+                
+                // Supprimer après l'animation
+                setTimeout(() => {
+                    if (tagElement && tagElement.parentNode) {
+                        tagElement.remove();
+                    }
+                }, duration * 1000);
+            }
+        });
+    </script>
 
 
         <!-- Navigation-->
