@@ -7,7 +7,7 @@ Pour rendre votre portfolio plus professionnel, nous allons nous assurer que tou
 1. Projet 1 (Technicien Support) : L'image existante `support.png` est adaptée.
 2. Projet 2 (Application de ticketing) : L'image existante `ticketing.png` est adaptée.
 3. Projet 3 (Optimisation du parc informatique) : L'image existante `parcinfo.jpg` est adaptée.
-4. Projet 4 (Cinéma) : L'image existante `cinema.webp` est adaptée.
+4. Projet 4 (Cinéma) : L'image existante `cinema.jpg` est adaptée.
 5. Projet 5 (Brocéliande Immo) : L'image existante `agenceimmo.jpg` est adaptée.
 6. Projet 6 (JavaFX) : L'image existante `javafx.webp` est adaptée.
 
@@ -29,7 +29,7 @@ Corrections pour les projets 3 à 6 dans les modaux :
 2. Projet 4 (Cinéma) :
    - Titre : "Application de gestion de cinéma"
    - Description : "Développement d'une solution de réservation"
-   - Image : `assets\img\team\cinema.webp`
+   - Image : `assets\img\team\cinema.jpg`
    - Description détaillée : "Ce projet consistait à développer une application web permettant la gestion des réservations et des séances dans un cinéma. J'ai implémenté un système complet avec authentification utilisateur, sélection de films, et paiement en ligne."
    - Client : "CinéMaster"
    - Catégorie : "Développement Web"

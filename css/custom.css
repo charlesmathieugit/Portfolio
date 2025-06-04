@@ -741,8 +741,11 @@ span.fa-stack.fa-4x img {
 
 /* Styles pour la nouvelle image TigerGym */
 .tiger-logo {
-  object-fit: contain;
+  object-fit: cover;
   transition: transform 0.3s ease;
+  background-color: transparent;
+  max-width: 100%;
+  height: auto;
 }
 
 .tiger-logo:hover {
